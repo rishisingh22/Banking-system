@@ -1,42 +1,22 @@
-# Banking-system
-It is designed for Risk of Human error in the maintenance of the account transactions  of large-scale customer .
-<br>
-print( ' BANK of VIT Bhopal University ')
-balance = 0
-while True :
-    print(" \n ----BanKing System Menu----")
-    print(' 1>  Deposit')
-    print(' 2>  Withdraw')
-    print(' 3>  Check Balance')
-    print(' 4>  Exit')
-    choice= input (" Enter your Choice [1-4] \n ")
-    if (choice == '1') :
-        try:
-            deposit_amount = float(input('Enter amount to Deposit ='))
-            if deposit_amount > 0 :
-                balance += deposit_amount # balance = balance + deposit_amount 
-                print('Deposited Successfully!! ',' New Balance =', balance)
-            else:
-                print('Invalid Amount ; Money must be Positive ')
-        except ValueError :
-            print('Invalid input , PLEASE! Enter a number =')
-    if choice =='2' :
-        try:
-            withdraw_amount = float (input('Enter amount to WITHDRAW = '))
-            if withdraw_amount > 0:
-                if balance>= withdraw_amount :
-                    balance -= withdraw_amount # balance = balance - withdraw_amount
-                    print('WIthdrew Successfullly!! \n', 'Current Balance= ',balance)
-                else:
-                    print('Insufficient Balance ')
-            else:
-                 print('Money cannot be NEGATIVE!!')
-        except ValueError:
-            print('Invalid input!  Please Enter a valid Input')
-    elif choice =='3':
-        print("Current Balance =", balance )
-    elif choice =='4':
-        print('Thank YOU!!')
-        break
-    else:
-        print('Invalid choice')
+BMI Calculator
+
+This project calculates a person’s BMI based on weight and height.
+It also classifies the BMI result as Underweight, Normal, Overweight or Obese.
+
+Features:
+- Takes input weight (kg)
+- Takes input height (meters)
+- Calculates BMI
+- Shows BMI category
+
+Formula:
+BMI = weight / (height * height)
+
+Python Concepts Used:
+- Functions
+- Conditional statements
+- Input/Output
+- Loops
+
+How to Run:
+python code.py
